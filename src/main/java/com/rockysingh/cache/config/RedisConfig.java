@@ -14,7 +14,6 @@ public class RedisConfig{
 
     @Autowired
     private JedisConnectionFactory jedisConnFactory;
-    jedisConnFactory.setPassword("password");
 
     @Bean
     public StringRedisSerializer stringRedisSerializer() {
@@ -31,6 +30,8 @@ public class RedisConfig{
 
     @Bean
     public RedisTemplate<String, User> redisTemplate() {
+        jedisConnFactory.setPassword("password");
+        
         RedisTemplate<String, User> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(jedisConnFactory);
         redisTemplate.setKeySerializer(stringRedisSerializer());
