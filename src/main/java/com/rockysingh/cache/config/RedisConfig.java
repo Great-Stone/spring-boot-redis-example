@@ -14,6 +14,7 @@ public class RedisConfig{
 
     @Autowired
     private JedisConnectionFactory jedisConnFactory;
+    jedisConnFactory.setPassword("password");
 
     @Bean
     public StringRedisSerializer stringRedisSerializer() {
