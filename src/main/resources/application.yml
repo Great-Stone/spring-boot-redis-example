@@ -5,3 +5,4 @@ spring:
   redis:
     host: redis-database.redis.svc
     port: 6379
+    password: password
