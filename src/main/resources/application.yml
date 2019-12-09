@@ -3,5 +3,5 @@ server:
 
 spring:
   redis:
-    host: localhost
+    host: redis-database.redis.svc
     port: 6379
