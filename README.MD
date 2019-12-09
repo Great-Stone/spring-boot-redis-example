@@ -29,6 +29,18 @@ on REDIS as the DAO.
     }
     
     
+Test Json Body (Post)
+```json
+{
+    "id": "100",
+    "name": "user1",
+    "surname": "sur1",
+    "age": 20,
+    "address": "address1",
+    "email": "email@abc.com"
+}
+```
+    
 ## License
 
 ### MIT License
